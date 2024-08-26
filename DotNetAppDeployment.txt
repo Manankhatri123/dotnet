@@ -1,22 +1,3 @@
-Step 1: create a webapp using marketplace.
-Step 2: create a new resource group name it as rg-webapp
-Step 3: name it as demomananappweb.
-Step 4: Runtime Stack .NET8
-step 5 : choose region 
-step 6 : create a new app service plan asp-webapp
-step 7 : create 
-Step 8 : import your repository on azure repository
-Step 9 : create azure pipeline
-Step 10: select your repository
-Step 11: select asp.net as pipeline
-Step 12: view and edit the yaml pipeline .
-
-Azure-pipeline.yml
-# ASP.NET
-# Build and test ASP.NET projects.
-# Add steps that publish symbols, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
-
 trigger: none
 
 pool:
@@ -76,7 +57,3 @@ stages:
           appType: 'webApp'
           WebAppName: 'demomananappweb'
           packageForLinux: '$(System.ArtifactsDirectory)/**/*.zip'
-      
-	  
-Step 13: Save and Run the pipeline 
-Step 14: navigate the app url.
